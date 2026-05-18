@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-red: #E6322E;
+  --color-yellow: #F6D01F;
+  --color-blue: #1F3C88;
+  --color-black: #111111;
+  --color-light: #F9F9F9;
+}
+
+@layer base {
+  body {
+    @apply bg-light text-black font-sans antialiased;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .border {
+    @apply border-black border-[6px];
+  }
+
+  .card {
+    @apply bg-white border-[6px] border-black shadow-none transition-all;
+  }
+
+  .btn {
+    @apply px-6 py-3 font-black uppercase border-[6px] border-black transition-all active:translate-x-[2px] active:translate-y-[2px] bg-white;
+  }
+
+  .btn-primary {
+    @apply bg-red text-white hover:bg-red/90;
+  }
+
+  .btn-secondary {
+    @apply bg-yellow text-black hover:bg-yellow/90;
+  }
+
+  .btn-accent {
+    @apply bg-blue text-white hover:bg-blue/90;
+  }
+
+  .grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(29,53,87,0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(29,53,87,0.05) 1px, transparent 1px);
+  }
+}

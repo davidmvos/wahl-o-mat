@@ -1,0 +1,6 @@
+{
+  "name": "Bauhaus Wahl-O-Mat",
+  "description": "Ein moderner, Bauhaus-inspirierter Wahl-O-Mat mit Admin-Konfiguration über JSON-Upload und interaktiver Visualisierung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
